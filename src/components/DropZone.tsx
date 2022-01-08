@@ -8,7 +8,6 @@ interface IDropZone {
 const DropZone: React.FC<IDropZone> = ({ setFile }) => {
 
     const onDrop = useCallback(acceptedFiles => {
-        console.log('accepted Files: ', acceptedFiles);
         setFile(acceptedFiles[0]);
     }, [])
 

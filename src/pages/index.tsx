@@ -26,8 +26,6 @@ export default function Home() {
                 },
             });
 
-            console.log('data: ', data);
-
             setDownloadPageLink(data.fileUploadedData.downloadPageLink);
             setId(data.fileUploadedData.id);
         } catch (error) {
