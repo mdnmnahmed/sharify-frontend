@@ -46,8 +46,11 @@ export default function Home() {
         <div className="grid h-screen font-serif text-white bg-gray-900 place-items-center">
             <div>
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className="my-4 text-3xl font-medium">Sharify</h1>
-                    <div className="flex flex-col items-center justify-center px-3 py-10 bg-gray-800 shadow-xl w-96 rounded-xl">
+                    <h1 className="my-3 text-3xl font-medium font-bold">Sharify</h1>
+                    <h3 className=" text-1xl text-opacity-40 text-rich-black">
+                        Simple and Reliable File Sharing
+                    </h3>
+                    <div className="flex flex-col items-center justify-center px-3 py-10 bg-gray-800 shadow-xl rounded-xl" style={{ width: "130%" }}>
 
                         {!downloadPageLink && <DropZone setFile={setFile} />}
 

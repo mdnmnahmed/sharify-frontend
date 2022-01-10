@@ -18,7 +18,7 @@ const DropZone: React.FC<IDropZone> = ({ setFile }) => {
     });
 
     return (
-        <div className="w-full p-4">
+        <div className="w-full p-2 py-0">
             <div {...getRootProps()} className="w-full rounded-md cursor-pointer h-80 focus:outline-none">
                 <input {...getInputProps()} />
                 <div className={`flex flex-col items-center justify-center h-full space-y-3 border-2 border-dashed border-yellow-light rounded-xl ${isDragReject ? 'border-red-500' : ''} ${isDragAccept ? 'border-green-500' : ''}`}>
